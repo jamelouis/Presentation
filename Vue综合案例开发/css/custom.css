@@ -1,0 +1,194 @@
+
+:root {
+    --color-green: #00ff00;
+    --bg: #ffeeff;
+}
+
+.reveal .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+ .custom-list {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* 创建两列，每列占相等的空间 */
+    gap: 20px;
+    /* 列之间的间隔 */
+    padding: 20px;
+}
+
+/* 为特定幻灯片中的无序列表设置样式 */
+ .custom-list content > ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: square;
+    /* 设置项目符号类型为方块 */
+    padding-left: 30px;
+    /* 设置列表项的左内边距 */
+    flex-direction: column;
+}
+
+ .custom-list ul li {
+    /* 设置列表项文字颜色为红色 */
+    margin-bottom: 15px;
+    /* 设置列表项之间的间距 */
+}
+
+/* 为特定幻灯片中的有序列表设置样式 */
+ .custom-list ol {
+    list-style-type: upper-roman;
+    /* 设置项目符号类型为大写罗马数字 */
+    padding-left: 40px;
+    /* 设置列表项的左内边距 */
+}
+
+ .custom-list ol li {
+    font-weight: bold;
+    /* 设置列表项文字加粗 */
+    margin-bottom: 10px;
+    /* 设置列表项之间的间距 */
+}
+
+ h2 {
+    text-align: left;
+}
+
+
+.chapter-1 header ul> li:nth-of-type(1) {
+    background-color: gray;
+}
+
+.chapter-2 ul > li:nth-of-type(2) {
+    background-color: gray;
+}
+
+.chapter-3 .header ul > li:nth-of-type(3) {
+    background-color: gray;
+}
+
+.chapter-4 ul > li:nth-of-type(4) {
+    background-color: gray;
+}
+
+.chapter-5 ul > li:nth-of-type(5) {
+    background-color: gray;
+}
+
+.chapter-6 ul > li:nth-of-type(6) {
+    background-color: gray;
+}
+
+.header ul > li {
+    padding: 0.5rem;
+    border-radius: 1.0rem;
+}
+
+.header ul > li {
+    list-style-type: none;
+}
+
+.header p {
+    text-align: left;
+    flex: 1;
+}
+
+.header ul {
+    flex: 2;
+}
+
+.reveal pre {
+    width: 100%;
+    height: 100%;
+}
+
+.reveal .hljs {
+    min-height: 100%;
+}
+
+.custom-list div.content {
+    display: flex;
+    justify-content: space-between !important;
+    flex-direction: row !important;
+    align-items: center !important;
+}
+
+.custom-list div.content h2 {
+    flex: 1;
+    text-align: center;
+}
+
+.custom-list div.content ul {
+    flex: 2;
+}
+
+.reveal ul {
+    
+    list-style-type: none;
+}
+
+.custom-list div.content ul {
+    list-style-type: none;
+} 
+
+.custom-list div.content ul li {
+    padding: 1.0rem;
+    background-color: #ffeeff;
+    border-radius: 1rem;
+}
+
+.ml-20 {
+    margin-left: 40px;
+}
+
+.ml-40 {
+    margin-left: 80px;
+}
+
+.green {
+    color: var(--color-green);
+}
+
+.box-list div.content > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem; 
+    flex-wrap: wrap;
+}
+
+.box-list div.content > ul > li {
+    background-color: var(--bg); 
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.box-list div.content > ul > li > ul {
+    list-style-type: none;
+    padding: 0;
+}
+.box-list div.content > ul > li > ul > li {
+    color: #cf5c2a;
+    font-size: 3rem;
+}
+.box-list div.content h2 {
+    flex: 1;
+}
+
+.box-list div.content ul {
+    flex: 1;
+}
+
+.center > div > div.content {
+    justify-content: center !important;
+    align-items: center !important;
+}
